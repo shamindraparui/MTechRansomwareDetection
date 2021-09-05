@@ -1,0 +1,9 @@
+1. Run "ObtainApiAsmFromBenignRansom.py"  ======== it takes location of benign and ransomware files. Change the location within code. Outputs frequently used APIs and assemblies.
+
+2. Run "TopFeatureSelection.py" ========== it takes output of step 1. No need to change the program code. Outputs 2 files.
+
+3. Run "FetchData.py" ======== it takes output of step 3. Change the location of the R/B files within the code. Outputs 2 files.
+
+4. Run "trainClassifiers.ipynb" ====== execute 3 cell top to bottom. Takes output of step 3. Use anaconda JupyterLab to run this. It saves the LGBM classifier on disk.
+
+5. Run "runClassifier.py" ====== it takes the LGBM file from disk which is the classifier saved by step 4. To test an unknown file, modify the file location within the code.
